@@ -1,4 +1,4 @@
-export type DromPageType = 'orders' | 'chat' | 'unknown';
+export type DromPageType = 'orders' | 'chat' | 'bulletinsList' | 'drom' | 'unknown';
 
 export interface Order {
   id: string;
