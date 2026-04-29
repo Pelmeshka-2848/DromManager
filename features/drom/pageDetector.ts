@@ -33,6 +33,10 @@ export function detectDromPage(url: string): DromPageType {
     return 'chat';
   }
 
+  if (/^\/personal\/messaging-modal(?:\/|$)/.test(path)) {
+    return 'chat';
+  }
+
   if (/^\/my\/bulletins(?:\/actual\/auto\/|\/archive\/auto\/|\/|$)/.test(path)) {
     return 'bulletinsList';
   }
